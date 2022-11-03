@@ -83,6 +83,11 @@ a{
     opacity: 0.80;
 }
 
+.boxes h1{
+    display: block;
+    align-items: center;
+}
+
 .box img{
     width: 170px;
 }
@@ -114,9 +119,7 @@ a{
     background-color: white;
     border-radius: 4px;
     padding: 30px;
-    border: solid 3px rgb(255,0,0) ;
     opacity: 0.90;
-    
 }
 .we h2 {
     color: rgb(0,0,0);
@@ -148,31 +151,28 @@ a{
     text-align: center;
 }
 
-.morumbi {
+.morumbi .container {
+    height: 250px;
+    padding: 25px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
     background-color: white;
     opacity: 0.90;
     width: 100%;
-    padding-top: 10px;
 } 
 
 .morumbi img{
     display: flex;
-    height: 275px;
+    height: 98%;
     border-radius: 10px;
     width: 50%;
+    background-color: white;
 }
 
 .morumbi h1{
     margin:50px 10px 10px;
-}
-.container1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80%;
-    width: 100%;
-    
 }
 
 .content h1{
