@@ -153,12 +153,14 @@ a{
     background-color: white;
     opacity: 0.90;
     width: 100%;
+    padding-top: 10px;
 } 
 
 .morumbi img{
     display: flex;
-    height: 300px;
+    height: 275px;
     border-radius: 10px;
+    width: 50%;
 }
 
 .morumbi h1{
