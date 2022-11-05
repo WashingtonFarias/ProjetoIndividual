@@ -76,11 +76,11 @@ a {
     margin: auto;
 }
 
-.caixa_cadastro{
+.caixa_login{
     background-color: white;
     opacity: 0.90;
     width: 400px;
-    height: 400px;
+    height: 300px;
     color: rgb(255, 0, 0);
     display: flex;
     flex-direction: column;
@@ -88,12 +88,12 @@ a {
     border-radius: 7px;
 }
 
-.cadastro{
+.login{
     display: flex;
     flex-direction: column;
 }
 
-.cadastro input{
+.login input{
     border-radius: 10px;
     padding: 7px 7px;
     border-bottom: solid rgb(0, 0, 0) 3px;
@@ -101,13 +101,13 @@ a {
     text-align: center;
 }
 
-.cadastro .tipo_campo{
+.login .tipo_campo{
     text-align: center;
     font-weight: bold;
     font-size: large;
 } 
 
-.cadastro button{
+.login button{
     margin-top: 10px;
     background: #ff0000;
     color: #fff;

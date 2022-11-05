@@ -1,0 +1,54 @@
+body {
+    margin:0;
+    font-family: sans-serif;
+    background-image: url(assets-css/202200908_rummens_SPFCxATLETICOGO_3216_-scaled.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.header {
+    color: rgb(250, 250, 250);
+    border-bottom: solid 3px rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.container {
+    margin:auto;
+    width: 80%;
+    margin: auto;
+   
+}
+
+.header .container {
+    margin:auto;
+    display: flex;
+}
+
+.header ul #aqui {
+    font-weight: 1000;
+    color: rgb(250, 250, 250);
+    font-weight: bold;  
+}
+
+a {
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+}
+
+.navbar {
+    margin:auto;
+    display: flex;
+    width: 600px;
+    justify-content: space-around;
+    color: rgb(250, 250, 250);
+    list-style: none;
+}
+.banner {
+    margin:auto;
+    color: rgb(250, 250, 250);
+    padding: 40px 0;
+    height: 500px;
+    background-image: url(assets-css/img3.jpg);
+    background-position: center;
+    background-size: cover;
+}

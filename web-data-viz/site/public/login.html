@@ -10,12 +10,9 @@
 
     <script src="./js/funcoes.js"></script>
 
-    <link rel="icon" href="./assets/icon/favicon2.ico">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link rel="icon" href="css/assets-css/icon-removebg-preview.png">
+    <link rel="stylesheet" href="css/login.css">
+
 </head>
 
 <body>
@@ -47,35 +44,18 @@
 
 
     <div class="banner">
-        <div class="alerta_erro">
-            <div class="card_erro" id="cardErro">
-                <span id="mensagem_erro"></span>
-            </div>
-        </div>
         <div class="container">
-            <div class="card">
+            <div class="caixa_login">
                 <h2>Olá de volta!</h2>
-                <div class="formulario">
+                <div class="login">
 
-
-                    <span class="tipo_campo">E-mail:</span>
+                    <div class="tipo_campo">E-mail:</div>
                     <input id="email_input" type="text" placeholder="Login">
-
-                    <span class="tipo_campo">Senha:</span>
+                    <div class="tipo_campo">Senha:</div>
                     <input id="senha_input" type="password" placeholder="******">
-
                     <button class="btn" onclick="entrar()">Entrar</button>
 
-
-                </div>
-
-                <div id="div_aguardar" class="loading-div">
-                    <img src="./assets/circle-loading.gif" id="loading-gif">
-                </div>
-
-                <div id="div_erros_login">
-
-                </div>
+                    </div>
             </div>
         </div>
     </div>
