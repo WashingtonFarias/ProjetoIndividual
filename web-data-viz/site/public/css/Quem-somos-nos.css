@@ -1,33 +1,31 @@
 body {
-    margin:0;
+    margin: 0;
     font-family: sans-serif;
-    background-image: url(assets-css/202200908_rummens_SPFCxATLETICOGO_3216_-scaled.jpg);
-    background-position: center;
-    background-size: cover;
+    background-color: rgb(0, 0, 0);
 }
 
 .header {
     color: rgb(250, 250, 250);
-    border-bottom: solid 3px rgb(0, 0, 0);
+    border-bottom: solid 3px rgb(250, 250, 250);
     font-weight: bold;
 }
 
 .container {
-    margin:auto;
+    margin: auto;
     width: 80%;
     margin: auto;
-   
+
 }
 
 .header .container {
-    margin:auto;
+    margin: auto;
     display: flex;
 }
 
 .header ul #aqui {
     font-weight: 1000;
     color: rgb(250, 250, 250);
-    font-weight: bold;  
+    font-weight: bold;
 }
 
 a {
@@ -36,19 +34,118 @@ a {
 }
 
 .navbar {
-    margin:auto;
+    margin: auto;
     display: flex;
     width: 600px;
     justify-content: space-around;
     color: rgb(250, 250, 250);
     list-style: none;
 }
+
+/*------------------------------------------------------------------------------------------------------INICIO DO CARROSSEL --------------------------------------------------------------------------------------------------------------------------*/
 .banner {
-    margin:auto;
-    color: rgb(250, 250, 250);
-    padding: 40px 0;
     height: 500px;
-    
+    /* border: 2px solid yellow; */
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.carrossel {
+    /* border: 2px solid blue; */
+    border-radius: 20px;
+    overflow: hidden;
+    /*define onde eu quero colocar o meu elemento na tela */
+    /* move o conteudo no seu próprio eixo */
+    /*eixo x deitado, eixo y em pé */
+}
+
+.navegadorcarrossel {
+    position: absolute;
+    /* se eu colocar duas vezes eu só vou conseguir mover o meu filho dentro da div carrossel */
+    left: 50%;
+    transform: translate(-50%, 1450%);
+    /* corrigir o bug de ficar o left muito pra direita invertendo */
+    display: flex;
+}
+
+.navegadorcarrossel label {
+    background-color: red;
+}
+
+.barra {
+    width: 20px;
+    height: 17px;
+    border: 2px solid white;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.bar:hover {
+    background-color: red;
+}
+
+.carrossel input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 50000%;
+    /**/
+    height: 100%;
+}
+
+.slide {
+    width: 0.2%;
+    transition: .6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked~.s1 {
+    margin-left: 0;
+}
+
+#slide2:checked~.s1 {
+    margin-left: -0.20%;
+}
+
+#slide3:checked~.s1 {
+    margin-left: -0.40%;
+}
+
+#slide4:checked~.s1 {
+    margin-left: -0.60%;
+}
+
+#slide5:checked~.s1 {
+    margin-left: -0.80%;
+}
+
+#slide6:checked~.s1 {
+    margin-left: -1.0%;
+}
+
+#slide7:checked~.s1 {
+    margin-left: -1.2%;
+}
+
+#slide8:checked~.s1 {
+    margin-left: -1.4%;
+}
+
+#slide9:checked~.s1 {
+    margin-left: -1.6%;
+}
+
+#slide10:checked~.s1 {
+    margin-left: -1.8%;
 }
 
 .footer {
