@@ -1,5 +1,5 @@
 body {
-    margin:0;
+    margin: 0;
     font-family: sans-serif;
     background-image: url(assets-css/202200908_rummens_SPFCxATLETICOGO_3216_-scaled.jpg);
     background-position: center;
@@ -13,21 +13,21 @@ body {
 }
 
 .container {
-    margin:auto;
+    margin: auto;
     width: 80%;
     margin: auto;
-   
+
 }
 
 .header .container {
-    margin:auto;
+    margin: auto;
     display: flex;
 }
 
 .header ul #aqui {
     font-weight: 1000;
     color: rgb(250, 250, 250);
-    font-weight: bold;  
+    font-weight: bold;
 }
 
 a {
@@ -36,7 +36,7 @@ a {
 }
 
 .navbar {
-    margin:auto;
+    margin: auto;
     display: flex;
     width: 600px;
     justify-content: space-around;
@@ -47,8 +47,8 @@ a {
 
 
 .banner {
-    margin:auto;
-    color: rgb(250, 250, 250);
+    margin: auto;
+    color: rgb(250,250,250);
     padding: 40px 0;
     height: 500px;
     background-image: url(assets-css/202200908_rummens_SPFCxATLETICOGO_3216_-scaled.jpg);
@@ -57,7 +57,7 @@ a {
 }
 
 .banner .container {
-    margin:auto;
+    margin: auto;
     height: 400px;
     display: flex;
     justify-content: center;
@@ -68,6 +68,12 @@ a {
     font-size: 36px;
     width: 280px;
     font-weight: bold;
+    text-shadow: 
+               -1px -4px 0px rgb(0, 0, 0), 
+               -1px 4px 0px rgb(0, 0, 0),                    
+                1px -4px 0px rgb(0, 0, 0),                  
+                1px 0px 0px rgb(0, 0, 0);
+    
 }
 
 .banner .container span {
@@ -75,7 +81,7 @@ a {
 }
 
 .historia .container {
-    margin:auto;
+    margin: auto;
     height: 250px;
     padding: 25px;
     display: flex;
@@ -85,7 +91,7 @@ a {
 }
 
 .imagem {
-    margin:auto;
+    margin: auto;
     display: flex;
     height: 400px;
 }
@@ -96,7 +102,7 @@ a {
 }
 
 .historia {
-    margin:auto;
+    margin: auto;
     background-color: rgb(250, 250, 250);
     border-radius: 4px;
     padding: 30px;
@@ -125,26 +131,35 @@ a {
 }
 
 .idolos .container .boxes {
-    margin:auto;
+    margin: auto;
     display: flex;
 }
 
 .idolos {
-    margin:auto;
+    margin: auto;
     background-color: rgb(250, 250, 250);
     opacity: 0.90;
     padding: 30px;
 }
- 
-.idolos select{
+
+.idolos b{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.idolos select {
     border: solid rgb(0, 0, 0) 3px;
     background-color: white;
     border-radius: 10px;
     font-family: serif;
     font-weight: bold;
 }
- 
-.titulo{
+
+.idolos p{
+    font-size: larger;
+}
+
+.titulo {
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
@@ -163,7 +178,7 @@ a {
 
 
 .box {
-    margin:auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -173,39 +188,50 @@ a {
     text-align: center;
 }
 
-.morumbi{
-    margin:auto;
+.morumbi {
+    margin: auto;
     background-color: rgb(250, 250, 250);
     opacity: 0.80;
     padding: 30px;
 }
 
 .morumbi .container {
-    margin:auto;
+    margin: auto;
     height: 250px;
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
+
 }
 
-.morumbi img{
+.morumbi img {
     display: flex;
     height: 98%;
     border-radius: 10px;
     width: 50%;
 }
 
-.footer{
-    margin:auto;
+.morumbi p{
+    font-size: larger;
+}
+
+.morumbi b{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.footer {
+    margin: auto;
     background-image: url(assets-css/202200908_rummens_SPFCxATLETICOGO_3216_-scaled.jpg);
     height: 150px;
     color: #fff;
     display: flex;
 }
 
-.footer .container{
-    margin:auto;
+.footer .container {
+    margin: auto;
     display: flex;
     justify-content: center;
 }

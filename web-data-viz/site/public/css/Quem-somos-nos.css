@@ -48,7 +48,19 @@ a {
     color: rgb(250, 250, 250);
     padding: 40px 0;
     height: 500px;
-    background-image: url(assets-css/img3.jpg);
-    background-position: center;
-    background-size: cover;
+    
+}
+
+.footer {
+    margin: auto;
+    background-image: url(assets-css/202200908_rummens_SPFCxATLETICOGO_3216_-scaled.jpg);
+    height: 150px;
+    color: #fff;
+    display: flex;
+}
+
+.footer .container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
