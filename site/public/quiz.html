@@ -5,141 +5,229 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/quiz.css">
     <link rel="icon" href="css/assets-css/icon-removebg-preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
     <title>São Paulo FC | Quiz </title>
 </head>
 
 <body>
+    <!--Header-->
 
+    <div class="header">
+        <div class="container">
+            <a href="index.html">
+                <h1 class="titulo">São Paulo FC</h1>
+            </a>
+            <ul class="navbar">
+                <li>
+                    <a href="./index.html">
+                        Inicial
+                    </a>
+                </li>
+                <li>
+                    <a href="./Quem-somos-nós.html">Historia</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="resultados.html">Ranking</a>
+                </li>
+                <li class="agora">
+                    <a href="./Index.html">Sair</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bannerQuiz">
+        <div class="pergunta">
+
+            <H1><span class="teste">TESTE</span> <span class="seu">SEU</span> <span
+                    class="conhecimento">CONHECIMENTO</span></H1>
+
+            <p>1 – Qual a data de fundação do São Paulo?</p>
+            <select class="selects" id="p1">
+                <option value="null" id="zerada1">Responda aqui</option><br>
+                <option value="certo">25 de janeiro de 1930</option>
+                <option value="errada">10 de março de 1950</option>
+                <option value="errada">7 de setembro de 1910</option>
+                <option value="errada">01 de abril de 1925</option>
+            </select>
+
+
+
+
+            <p> 2 – Qual o ano do primeiro título da libertadores do São Paulo?</p>
+            <select class="selects" id="p2">
+                <option value="null" id="zerada2">Responda aqui</option><br>
+                <option value="errada">1990</option>
+                <option value="errada">1985</option>
+                <option value="certo">1992</option>
+                <option value="errada">1999</option>
+            </select>
+
+
+            <p> 3 – Qual é o jogador com mais gols feitos pelo São Paulo?</p>
+            <select class="selects" id="p3">
+                <option value="null" id="zerada3">Responda aqui</option><br>
+                <option value="errada">Rogerio Ceni</option>
+                <option value="certo">Serginho Chulapa</option>
+                <option value="errada">Rai</option>
+                <option value="errada">Luis Fabiano</option>
+            </select>
+
+
+
+            <p> 4 – Quem era o tecnico que comandava o time tri-campeão brasileiro em 2008?</p>
+            <select class="selects" id="p4">
+                <option value="null" id="zerada4">Responda aqui</option><br>
+                <option value="certo">Muricy Ramalho</option>
+                <option value="errada">Pepe Guardiola</option>
+                <option value="errada">Tele Santana</option>
+                <option value="errada">Fernando Diniz</option>
+            </select>
+
+
+
+            <p> 5 – Qual foi o ano do primeiro titulo do São Paulo? </p>
+            <select class="selects" id="p5">
+                <option value="null" id="zerada5">Responda aqui</option>
+                <option value="errada"> 1930</option>
+                <option value="errada"> 1932</option>
+                <option value="certo"> 1931</option>
+                <option value="errada"> 1935</option>
+            </select>
+
+
+
+            <p> 6 – Qual foi o primeiro titulo do São Paulo </p>
+            <select class="selects" id="p6">
+                <option value="null" id="zerada6">Responda aqui</option><br>
+                <option value="certo">Campeonato Paulista</option>
+                <option value="errada">Campeonato Brasileiro</option>
+                <option value="errada">Copa do Brasil</option>
+                <option value="errada">Copa Libertadores da America</option>
+            </select>
+
+
+
+            <p> 7 – Em que que ano foi inaugurado o estadio Cicero Pompeu de Toledo? </p>
+            <select class="selects" id="p7">
+                <option value="null" id="zerada7">Responda aqui</option>
+                <option value="errada">1955</option>
+                <option value="certo">1960</option>
+                <option value="errada">1970</option>
+                <option value="errada">1961</option>
+            </select>
+
+
+
+            <p> 8 – Quem era o capitão que levantou a taça no mundial de 2005?<br></p>
+            <select class="selects" id="p8">
+                <option value="null" id="zerada8">Responda aqui</option><br>
+                <option value="certo">Rogerio Ceni</option>
+                <option value="errada">Lugano</option>
+                <option value="errada">Cafu</option>
+                <option value="errada">Zetti</option>
+            </select>
+
+
+
+            <p> 9 – Qual jogador que fez o gol do titulo mundial de 2005</p>
+            <select class="selects" id="p9">
+                <option value="null" id="zerada9">Responda aqui</option>
+                <option value="errada">Aloisio Chulapa</option>
+                <option value="errada">Amoroso</option>
+                <option value="errada">Josué</option>
+                <option value="certo">Mineiro</option>
+            </select>
+
+
+            <p> 10 – Qual foi o ultimo titulo conquistado pelo São Paulo</p>
+            <select class="selects" id="p10">
+                <option value="null" id="zerada10">Responda aqui</option>
+                <option value="errada">Sulamericana</option>
+                <option value="errada">Copa do Brasil</option>
+                <option value="certo">Campeonato Paulista</option>
+                <option value="errada">Campeonato Brasileiro</option>
+            </select>
+            <br>
+            <rr>
+
+                <button id="botão" onclick="enviar()">Enviar</button>
+                <div id="div_msg"></div>
+        </div>
+    </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <h4>By Washington Farias SPTech-2022</h4>
+        </div>
+    </div>
 </body>
 
 </html>
 
-<!--Header-->
+<script>
+    var select = document.getElementsByClassName("selects")
 
-<div class="header">
-    <div class="container">
-        <h1 class="titulo">São Paulo FC </h1>
-        <ul class="navbar">
-            <li>
-                <a href="./index.html">
-                    Inicial
-                </a>
-            </li>
-            <li>
-                <a href="./Quem-somos-nós.html">Quem somos nós</a>
-            </li>
-            <li>|</li>
-            <li class="agora">
-                <a href="./Index.html">Sair</a>
-            </li>
-        </ul>
-    </div>
-</div>
 
-<div>
-    <div class="bannerQuiz">
-        <div class="pergunta">
-            1 – Qual a data  de fundação do São Paulo?  <br>
-            <select id="p1">
-                <option value="0" id="zerada1">Responda aqui</option><br>
-                <option value="1">25 de janeiro de 1930</option>
-                <option value="2">10 de março de 1950</option>
-                <option value="3">7 de setembro de 1910</option>
-                <option value="4">01 de abril de 1925</option>
-            </select><br><br>
+    function enviar() {
+        div_msg.innerHTML = ""
+        var acertos = 0
+        var nomeVar = sessionStorage.NOME_USUARIO
+        var usuarioVar = sessionStorage.ID_USUARIO
 
-            2 – Qual o ano do primeiro título da libertadores do São Paulo?<br>
-            <select id="p2">
-                <option value="0" id="zerada2">Responda aqui</option><br>
-                <option value="1">1990</option>
-                <option value="2">1985</option>
-                <option value="3">1992</option>
-                <option value="4">1999</option>
-            </select><br><br>
+        if (p1.value == "null" || p2.value == "null" || p3.value == "null" || p4.value == "null" || p5.value == "null" || p6.value == "null" || p7.value == "null" || p8.value == "null" || p9.value == "null" || p10.value == "null") {
+            alert('Todas opções precisam ser preenchidas')
+        }
 
-              3 – Qual é o jogador com o maios gols feitos pelo São Paulo?<br>
-              <select id="p3">
-                <option value="0" id="zerada3">Responda aqui</option><br>
-                <option value="1">Rogerioo Ceni</option>
-                <option value="2">Serginho Chulapa</option>
-                <option value="3">Rai</option>
-                <option value="4">Luis Fabiano</option>
-            </select><br><br>
-            
-            4 – Quem era o tecnico que comandava o time tri-campeão brasileiro em 2008?<br>
-            <select id="p4">
-                <option value="0" id="zerada4">Responda aqui</option><br>
-                <option value="1">Muricy Ramalho</option>
-                <option value="2">Pepe Guardiola</option>
-                <option value="3">Tele Santana</option>
-                <option value="4">Fernando Diniz</option>
-            </select><br><br>
-            
-            5 – Primeiro título da história do Corinthians? <br>
-            <select id="p5">
-                <option value="0" id="zerada5">Responda aqui</option><br>
-                <option value="1">Campeonato Paulista – 1914</option>
-                <option value="2">Campeonato Paulista – 1915</option>
-                <option value="3">Campeonato Brasileiro - 1914</option>
-                <option value="4">Campeonato Brasileiro - 1917</option>
-            </select><br><br>
+        else {
+            for (let contador = 0; contador < select.length; contador++) {
+                if (select[contador].value == "certo") {
+                    acertos++
+                }
+            }
+            div_msg.innerHTML += `Você teve um total de ${acertos} acertos <br>`
 
-            6 – Qual é o mascote do Corinthians? <br>
-            <select id="p6">
-                <option value="0" id="zerada6">Responda aqui</option><br>
-                <option value="1">Gavião</option>
-                <option value="2">Urubu</option>
-                <option value="3">Mosqueteiro</option>
-                <option value="4">Baleia</option>
-            </select><br><br>
+            if (acertos <= 5) {
+                div_msg.innerHTML += `Tente novamente <br> <img src="assets/triste.jpg"
+                 style= "height: 130px"; border-radius: 10px> `
+            }
+            else if (acertos >= 6 && acertos <= 9) {
+                div_msg.innerHTML += `Parabens <br> <img src="assets/feliz.jpeg"
+                     style= "height: 130px";> `
+            }
+            else {
+                div_msg.innerHTML += `Sensacional, você sabe muito!!! <br> <img src="assets/reinaldo.jpeg"
+                style= "height: 130px";> `
+            }
 
-            7 – Em que ano foi criado o hino do Corinthians? <br>
-            <select id="p7">
-                <option value="0" id="zerada7">Responda aqui</option><br>
-                <option value="1">1930</option>
-                <option value="2">1953</option>
-                <option value="3">1935</option>
-                <option value="4">1913</option>
-            </select><br><br>
 
-            8 – Qual é o maior rival do Corinthians?<br>
-            <select id="p8">
-                <option value="0" id="zerada8">Responda aqui</option><br>
-                <option value="1">Flamengo</option>
-                <option value="2">Santos</option>
-                <option value="3">São Paulo</option>
-                <option value="4">Palmeiras</option>
-            </select><br><br>
+        }
 
-            9 – Quantos mundiais o Corinthians tem?<br>
-            <select id="p9">
-                <option value="0" id="zerada9">Responda aqui</option><br>
-                <option value="1">0</option>
-                <option value="2">1</option>
-                <option value="3">2</option>
-                <option value="4">3</option>
-            </select><br><br>
 
-            10 – Qual é o goleiro que mais sofreu gols do Corinthians?<br>
-            <select id="p10">
-                <option value="0" id="zerada10">Responda aqui</option><br>
-                <option value="1">Rogério Ceni</option>
-                <option value="2">Diego Alves</option>
-                <option value="3">Marcos Roberto</option>
-                <option value="4">Júlio Sérgio</option>
-            </select><br><br>
 
-            <button id="btn" onclick="validar()">Enviar</button>
-            <div id="resultado"></div>
+        fetch("/usuarios/pontuar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                pontoServer: acertos,
+                nomeServer: nomeVar,
+                usuarioServer: usuarioVar
 
-        </div>
-    </div>
-</div>
+            })
+        }).then(function (resposta) {
 
-<div class="footer">
-    <div class="container">
-        <h4>Feito com amor por um aluno &hearts; SPTech &copy; 2022</h4>
-    </div>
-</div>
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+        return false;
+    }
+
+</script>

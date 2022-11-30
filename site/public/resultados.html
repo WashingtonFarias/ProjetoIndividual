@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/resultados.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Header-->
+
+    <div class="header">
+        <div class="container">
+            <a href="index.html">
+                <h1 class="titulo">São Paulo FC</h1>
+            </a>
+            <ul class="navbar">
+                <li>
+                    <a href="./index.html">
+                        Inicial
+                    </a>
+                </li>
+                <li>
+                    <a href="./historia.html">Historia</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="quiz.html">Quiz</a>
+                </li>
+                <li class="agora">
+                    <a href="./Index.html">Sair</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="div-results">
+        <div class="caixa-rank">
+            <h1>RANKING GERAL</h1>
+            <div id="feed_container" class="feed-container">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <h4>By Washington Farias SPTech-2022</h4>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    atualizarFeed()
+    function atualizarFeed() {
+        fetch("/avisos/nota").then(function (resposta) {
+            if (resposta.ok) {
+                if (resposta.status == 204) {
+                    var feed = document.getElementById("feed_container");
+                    var mensagem = document.createElement("span");
+                    mensagem.innerHTML = "Nenhum resultado encontrado."
+                    feed.appendChild(mensagem);
+                    throw "Nenhum resultado encontrado!!";
+                }
+
+                resposta.json().then(function (resposta) {
+                    console.log("Dados recebidos: ", JSON.stringify(resposta));
+
+                    var feed = document.getElementById("feed_container");
+                    feed.innerHTML = "";
+                    for (let i = 0; i < resposta.length; i++) {
+                        var publicacao = resposta[i];
+                        var divRanking = document.createElement("div")
+
+                        // criando e manipulando elementos do HTML via JavaScript
+                        var divPublicacao = document.createElement("div");
+                        var spanID = document.createElement("span");
+                        var spanTitulo = document.createElement("span");
+                        var spanNome = document.createElement("span");
+                        var divDescricao = document.createElement("span");
+                        var divButtons = document.createElement("div");
+                        var btnEditar = document.createElement("div");
+                        var btnDeletar = document.createElement("div");
+
+                        var resultado = document.querySelector('.caixa-rank')
+                        resultado.appendChild(divRanking);
+                        divRanking.className = 'ranking'
+
+                        divRanking.appendChild(spanID);
+                        divRanking.appendChild(spanNome);
+                        divRanking.appendChild(divDescricao);
+
+
+                        spanID.innerHTML = "Posição: <b>" + (i + 1) + "</b> ";
+                        spanNome.innerHTML = " Nome: <b>" + publicacao.nome + "</b>";
+                        divDescricao.innerHTML = " Nota: <b>" + publicacao.notas + "</b>" + " Pontos";
+
+
+
+                    }
+
+
+                });
+            } else {
+                throw ('Houve um erro na API!');
+            }
+        }).catch(function (resposta) {
+            console.error(resposta);
+        });
+    }
+</script>

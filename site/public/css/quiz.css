@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url(assets-css/202200908_rummens_SPFCxATLETICOGO_3216_-scaled.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.header {
+    color: rgb(250, 250, 250);
+    border-bottom: solid 3px rgb(0, 0, 0);
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.90;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+    margin: auto;
+
+}
+
+.header .container {
+    margin: auto;
+    display: flex;
+}
+
+.header ul #aqui {
+    font-weight: 1000;
+    color: rgb(250, 250, 250);
+    font-weight: bold;
+}
+
+a {
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+}
+
+.navbar {
+    margin: auto;
+    display: flex;
+    width: 600px;
+    justify-content: space-around;
+    color: rgb(250, 250, 250);
+    list-style: none;
+    transform: translate(210px);
+}
+
+.bannerQuiz{
+    display: flex;
+    background-color: rgb(250, 250, 250);
+    opacity: 0.90;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.teste{
+    color: rgb(250, 0, 0);
+}
+
+.seu{
+    color: rgb(250, 250, 250);
+    text-shadow: 
+               -1px -1px 0px rgb(0, 0, 0), 
+               -1px 1px 0px rgb(0, 0, 0),                    
+                1px -1px 0px rgb(0, 0, 0),                  
+                1px 0px 0px rgb(0, 0, 0);
+}
+
+.conhecimento{
+    color:rgb(0, 0, 0)
+}
+
+.bannerQuiz h1{
+    font-family: 'Rock Salt', cursive;
+}
+
+.bannerQuiz p{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.bannerQuiz select{
+    border: solid rgb(0, 0, 0) 2px  ;
+    border-radius: 10px;
+    width: 185px;
+    text-align: center;
+}
+
+.bannerQuiz .pergunta{
+    height: 1059px ;
+}
+
+.bannerQuiz button{
+    border: solid rgb(0, 0, 0) 2px  ;
+    border-radius: 10px;
+    opacity: 0.70x;
+    font-family: cursive; 
+    margin-top: 10px;
+
+}
+
+button:hover{
+    background-color: red;
+    opacity: 0.70
+}
+
+
+
+.footer {
+    margin: auto;
+    height: 150px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.90;
+    color: #fff;
+    display: flex;
+}
+
+.footer .container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}

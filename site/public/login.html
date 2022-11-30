@@ -21,11 +21,13 @@
 
     <div class="header">
         <div class="container">
-            <h1 class="titulo">AquaTech</h1>
+            <a href="index.html">
+                <h1 class="titulo">São Paulo FC</h1>
+            </a>
             <ul class="navbar">
                 <li>
                     <a href="./index.html">
-                        Inicial
+                        Home
                     </a>
                 </li>
                 <li>
@@ -63,11 +65,7 @@
     <!--footer inicio-->
     <div class="footer">
         <div class="container">
-            <h4>Feito com amor por um aluno &hearts; SPTech &copy; 2022
-                <br>
-                <span class="version">
-                    v1.0.0
-                </span>
+            <h4>By Washington Farias SPTech-2022
             </h4>
         </div>
     </div>
@@ -124,7 +122,7 @@
                     setTimeout(function () {
                         window.location = "quiz.html";
                     }, 1000); // apenas para exibir o loading
-                    
+
                 });
 
             } else {
@@ -133,7 +131,7 @@
 
                 resposta.text().then(texto => {
                     console.error(texto);
-                   
+
                 });
             }
 

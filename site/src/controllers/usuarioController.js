@@ -94,9 +94,18 @@ function cadastrar(req, res) {
     }
 }
 
+    function pontuar(req,res) {
+        var pontos = req.body.pontoServer
+        var nome = req.body.nomeServer
+        var idUsuario = req.body.usuarioServer
+        usuarioModel.pontuar(nome, pontos, idUsuario)
+}
+
 module.exports = {
     entrar,
     cadastrar,
     listar,
-    testar
+    testar,
+    pontuar
+
 }

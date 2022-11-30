@@ -2,8 +2,8 @@ body {
     margin: auto;
     font-family: sans-serif;
     background-image: url(assets-css/202200908_rummens_SPFCxATLETICOGO_3216_-scaled.jpg);
-    background-position: center ;
-    background-size: cover; 
+    background-position: center;
+    background-size: cover;
     width: 100%;
 }
 
@@ -68,7 +68,7 @@ a {
     /* border: 2px solid blue; */
     border-radius: 20px;
     overflow: hidden;
-    
+
     /*define onde eu quero colocar o meu elemento na tela */
     /* move o conteudo no seu próprio eixo */
     /*eixo x deitado, eixo y em pé */
@@ -190,133 +190,130 @@ a {
     height: 1900px;
     margin: 0;
 }
+
 .titulo h1 {
     padding: 15px;
     font-size: 38px;
-    color: red;
+    color: rgb(250, 250, 250);
     margin: auto;
     display: flex;
     justify-content: center;
 }
 
-.conteudo p{
+.conteudo p {
     color: rgb(250, 0, 0);
     text-align: center;
     padding: 15px;
-    font-size:20px
+    font-size: 23px
 }
+
+
 
 .imgTime1 {
     display: flex;
-    height: 250px;
     padding: 10px;
 }
 
-.imgTime2   {
-    display: flex;
-    height: 250px;
-    padding: 10px;
-    position: absolute;
-    top:1046px;
-}
-.imgTime3   {
-    display: flex;
-    height: 250px;
-    padding: 10px;   
-}
-.imgTime4   {
-    display: flex;
-    height: 250px;
-    padding: 10px;
-    position: absolute;
-    top:1046px;
-    right:3px;
+.conteudo img {
+    height: 235px;
+    
 }
 
-.imgTime5   {
+.imgTime2 {
     display: flex;
-    height: 250px;
     padding: 10px;
     position: absolute;
-    top:1320px;
+    top: 1046px;
 }
 
-.imgTime6   {
+.imgTime3 {
     display: flex;
-    height: 250px;
+    padding: 10px;
+}
+
+.imgTime4 {
+    display: flex;
     padding: 10px;
     position: absolute;
-    top:1320px;
+    top: 1046px;
     right: 3px;
 }
 
-.imgTime7   {
+.imgTime5 {
     display: flex;
-    height: 250px;
     padding: 10px;
     position: absolute;
-    top:1590px;
+    top: 1320px;
 }
 
-.imgTime8   {
+.imgTime6 {
     display: flex;
-    height: 250px;
     padding: 10px;
     position: absolute;
-    top:1590px;
+    top: 1320px;
     right: 3px;
 }
 
-.imgTime9  {
+.imgTime7 {
     display: flex;
-    height: 250px;
     padding: 10px;
     position: absolute;
-    top:1860px;
+    top: 1590px;
 }
 
-.imgTime10  {
+.imgTime8 {
     display: flex;
-    height: 250px;
     padding: 10px;
     position: absolute;
-    top:1860px;
+    top: 1590px;
+    right: 3px;
+}
+
+.imgTime9 {
+    display: flex;
+    padding: 10px;
+    position: absolute;
+    top: 1860px;
+}
+
+.imgTime10 {
+    display: flex;
+    padding: 10px;
+    position: absolute;
+    top: 1860px;
     right: 3px;
 }
 
 .imgTime11 {
     display: flex;
-    height: 250px;
     padding: 10px;
     position: absolute;
-    top:2130px;   
+    top: 2130px;
 }
 
 .imgTime12 {
     display: flex;
-    height: 250px;
     padding: 10px;
     position: absolute;
-    top:2130px;
-    right: 3px;   
+    top: 2130px;
+    right: 3px;
 }
 
 .imgTime13 {
     display: flex;
-    height: 250px;
     padding: 10px;
     position: absolute;
-    top:2400px;
+    top: 2400px;
 }
 
 .imgTime14 {
     display: flex;
-    height: 250px;
     padding: 10px;
     position: absolute;
-    top:2400px;
+    top: 2400px;
     right: 3px;
 }
+
 /*-----------------------------------------------------Fim Historia SPFC------------------------------------------------------------*/
 
 
@@ -346,29 +343,32 @@ a {
     display: flex;
     margin: 0;
     flex-direction: column;
+    padding: 40px;
 }
 
-.tituloRC{
+.tituloRC {
     display: flex;
-    color: red;
+    color: rgb(250, 250, 250);
     align-items: center;
     flex-direction: column
 }
 
-.imgRC{
+.imgRC {
     display: flex;
     border: solid red;
-    justify-content: center;;
+    justify-content: center;
+    ;
 }
 
-.imgRC img{
+.imgRC img {
     height: 195px;
     justify-content: center;
 }
 
-.rogerioceni p{
+.rogerioceni p {
     color: red;
     text-align: center;
+    font-size: 18px;
 }
 
 
@@ -376,61 +376,69 @@ a {
     display: flex;
     margin: 0;
     flex-direction: column;
+    padding: 40px   ;
 }
 
-.tituloRai{
+.tituloRai {
     display: flex;
-    color: red;
+    color: rgb(250, 250, 250);
     align-items: center;
     flex-direction: column
 }
 
-.imgRai{
+.imgRai {
     display: flex;
     border: solid red;
-    justify-content: center;;
+    justify-content: center;
+    ;
 }
 
-.imgRai img{
+.imgRai img {
     height: 195px;
     width: 150px;
     justify-content: center;
 }
 
-.rai p{
+.rai p {
     color: red;
     text-align: center;
+    font-size: 18px;
 }
 
 .serginhochulapa {
     display: flex;
     margin: 0;
     flex-direction: column;
+    padding:40px;
 }
 
-.tituloSerginho{
+.tituloSerginho {
     display: flex;
-    color: red;
+    color: rgb(250, 250, 250);
     align-items: center;
     flex-direction: column
+    
 }
 
-.imgSerginho{
+.imgSerginho {
     display: flex;
     border: solid red;
-    justify-content: center;;
+    justify-content: center;
+    ;
 }
 
-.imgSerginho img{
+.imgSerginho img {
     height: 195px;
     width: 150px;
     justify-content: center;
 }
 
-.serginhochulapa p{
+.serginhochulapa p {
     color: red;
     text-align: center;
+    font-size:18px;
 }
+
 /*---------------------------------------------------------Fim Idolos-----------------------------------------------------------------*/
 
 

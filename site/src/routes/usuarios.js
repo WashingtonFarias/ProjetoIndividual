@@ -18,6 +18,11 @@ router.post("/cadastrar", function (req, res) {
 
 router.post("/autenticar", function (req, res) {
     usuarioController.entrar(req, res);
+    
 });
+router.post("/pontuar", function (req, res) {
+    usuarioController.pontuar(req, res);
+});
+
 
 module.exports = router;
